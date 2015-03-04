@@ -5,7 +5,7 @@ describe('Thermostat', function() {
     thermostat = new Thermostat();
   });
 
-  it('has a default temp of 20 degrees', function() {
+  it('has a current temperature of 20 degrees', function() {
     expect(thermostat.currentTemperature).toEqual(20)
   });
 
@@ -27,6 +27,12 @@ describe('Thermostat', function() {
   it('can decrease the temperature by 5 degrees', function() {
     thermostat.decreaseTemperature(5);
     expect(thermostat.currentTemperature).toEqual(15);
+  });
+
+  it('has a minimum temperature of 10 degrees', function(){
+    thermostat.decreaseTemperature(9);
+    expect(thermostat.currentTemperature).toEqual(11);
+
   });
 
 });
