@@ -8,5 +8,7 @@ Thermostat.prototype.increaseTemperature = function(degrees) {
 
 Thermostat.prototype.decreaseTemperature = function(degrees) {
   this.currentTemperature -= degrees;
-  if (this.currentTemperature < 10) { return 10; }
+  this.currentTemperature = Math.max(10, this.currentTemperature);
 };
+
+
