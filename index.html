@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat</title>
+
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <h1>
+        <span id='temperature'>!!</span>
+      </h1>
+    <h2 class="degrees">degrees</h2>
+    <p>
+      <a href="#" class='increaseTemp button'>+</a>
+      <a href="#" class='decreaseTemp button'>-</a>
+      <a href="#" class='reset button'>Reset</a>
+    </p>
+    <p>power saving mode</p>
+    <p>
+      <a href="#" class='switch PSM-on active'>on</a>
+      <a href="#" class='switch PSM-off'>off</a>
+      </p>
+    </main>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='js/Thermostat.js'></script>
+    <script>
+
+      var thermostat = new Thermostat();
+
+      $(document).ready(function() {
+        $('#temperature').text(thermostat.defaultTemperature);
+
+        $('.increaseTemp').on('click', function() {
+          thermostat.increaseTemperature(1);
+
+        $('#temperature').text(thermostat.defaultTemperature);
+
+        $('.decreaseTemp').on('click', function() {
+          thermostat.decreaseTemperature(1);
+
+        $('#temperature').text(thermostat.defaultTemperature);
+
+        $('.switch PSM-off active').on('click', function() {
+          thermostat.PSMonOff(mode);
+
+          });
+
+           });
+
+
+        });
+
+
+      });
+
+    </script>
+  </body>
+</html>
