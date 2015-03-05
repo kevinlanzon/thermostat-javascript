@@ -1,12 +1,13 @@
 var Thermostat  = function() {
   this.currentTemperature = 20;
   this.powerSaveOn = 25;
+  this.powerSaveOFF = 32;
   this.PSM = true;
 };
 
 Thermostat.prototype.increaseTemperature = function(degrees) {
   this.currentTemperature += degrees;
-  if(this.PSM) {this.currentTemperature = Math.min(25, this.currentTemperature);}
+  this.currentTemperature = (this.PSM) ? Math.min(25, this.currentTemperature) : Math.min(32, this.currentTemperature);
 };
 
 Thermostat.prototype.decreaseTemperature = function(degrees) {
@@ -15,6 +16,7 @@ Thermostat.prototype.decreaseTemperature = function(degrees) {
 };
 
 Thermostat.prototype.PSMoff = function() {
+  this.currentTemperature = this.powerSaveOFF;
   this.PSM = false;
 };
 

@@ -53,6 +53,13 @@ describe('Thermostat', function() {
     expect(thermostat.currentTemperature).toEqual(25);
   });
 
+  it('has a maximum temp of 32 degrees when PSM is OFF', function() {
+    thermostat.PSMoff();
+    thermostat.resetButton();
+    thermostat.increaseTemperature(15);
+    expect(thermostat.currentTemperature).toEqual(32);
+  });
+
   it('can reset the temperature when the reset button is clicked', function() {
     thermostat.increaseTemperature(5);
     thermostat.resetButton();
