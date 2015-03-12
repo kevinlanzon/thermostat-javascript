@@ -16,7 +16,7 @@ Thermostat.prototype.decreaseTemperature = function(degrees) {
 };
 
 Thermostat.prototype.PSMoff = function() {
-  this.currentTemperature = this.powerSaveOFF;
+  this.powerSaveOFF = this.currentTemperature;
   this.PSM = false;
 };
 
