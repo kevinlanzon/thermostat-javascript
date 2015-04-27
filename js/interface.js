@@ -31,5 +31,4 @@ $(document).ready(function() {
    thermostat.PSMoff();
    textDisplay();
   });
-
 });

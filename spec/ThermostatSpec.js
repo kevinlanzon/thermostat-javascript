@@ -65,5 +65,4 @@ describe('Thermostat', function() {
     thermostat.resetButton();
     expect(thermostat.currentTemperature).toEqual(20);
   });
-
 });
