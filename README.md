@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/kevinlanzon/thermostat-javascript/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/thermostat-javascript)
 [![Build Status](https://travis-ci.org/kevinlanzon/thermostat-javascript.svg?branch=master)](https://travis-ci.org/kevinlanzon/thermostat-javascript)
 
 Thermostat in JavaScript
