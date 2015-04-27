@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kevinlanzon/thermostat-javascript.svg?branch=master)](https://travis-ci.org/kevinlanzon/thermostat-javascript)
+
 Thermostat in JavaScript
 ==========
 [Makers Academy](http://www.makersacademy.com) Week 5 Challenge
@@ -44,4 +46,3 @@ How to run tests
 cd thermostatJS
 SpecRunner.html
 ```
-
