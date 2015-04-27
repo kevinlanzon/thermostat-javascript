@@ -28,7 +28,7 @@ Technologies used
 Screenshot
 ---
 <div align="center">
-        <img width="40%" src="images/Screen Shot 2015-03-12 at 21.49.22.png">
+        <img width="80%" src="images/Screen Shot 2015-03-12 at 21.49.22.png">
 </div>
 
 
