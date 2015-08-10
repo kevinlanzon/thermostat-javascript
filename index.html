@@ -3,37 +3,31 @@
   <head>
     <title>Thermostat</title>
     <meta charset='utf8'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/style.css">
   </head>
   <body>
-    <main class="wrapper">
-     <section class="col-7-12">
-      <h1 id='temperature'>20</h1>
-    <h2 class="degrees">degrees</h2>
-    <p>
-      <a href="#" class='increaseTemp button'>+</a>
-      <a href="#" class='decreaseTemp button'>-</a>
-      <a href="#" class='resetButton button'>Reset</a>
-    </p>
-    <h2 id="power-saving-divider">
-    <br>
-      <span>power saving mode</span>
-      <br>
-    </h2>
-    <p>
-      <a href="#" class='PSM-on'>on</a>
-    </p>
-    <br>
-    <p>
-      <a href="#" class='PSM-off'>off</a>
-      </p>
+    <main class="grid">
+      <section class="col-7-12">
+        <h1>
+          <span id='temperature'>??</span>
+        </h1>
+          <button class="increase-temp">+</button>
+          <button class="decrease-temp">-</button>
+          <button class="reset-button">reset</button>
+          <h2 id="power-saving-divider">
+            <span>power saving mode</span>
+          </h2>
+        <button class='PSM-on'>on</button>
+        <button class='PSM-off'>off</button>
       </section>
       <section class="col-5-12">
+        <img src="public/img/degrees.svg"/>
+        <img src="public/img/thermometer.svg" class="thermometer"/>
       </section>
     </main>
     <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
     <script src='js/thermostat.js'></script>
     <script src='js/interface.js'></script>
-    <script src='js/jquery.js'></script>
   </body>
 </html>

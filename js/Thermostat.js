@@ -3,6 +3,7 @@ var Thermostat  = function() {
   this.powerSaveOn = 25;
   this.powerSaveOFF = 32;
   this.PSM = true;
+  this.energyUsageBreakpoint = 18;
 };
 
 Thermostat.prototype.increaseTemperature = function(degrees) {
@@ -21,10 +22,24 @@ Thermostat.prototype.PSMoff = function() {
 };
 
 Thermostat.prototype.PSMon = function() {
-  this.currentTemperature = this.powerSaveOn;
+  this.PSM = true;
+  this.powerSaveOFF = this.powerSaveOn;
+  if(this.currentTemperature > this.powerSaveOn) this.currentTemperature =this.powerSaveOn
   this.PSM = true;
 };
 
 Thermostat.prototype.resetButton = function() {
   this.currentTemperature = 20;
+};
+
+Thermostat.prototype.energyRating = function() {
+  if(this.currentTemperature < this.energyUsageBreakpoint) {
+    return "low-usage";
+  }
+  else if(this.currentTemperature < this.powerSaveOn && this.currentTemperature >= this.energyUsageBreakpoint) {
+    return "medium-usage";
+  }
+  else {
+    return "high-usage";
+  }
 };

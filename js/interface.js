@@ -1,23 +1,26 @@
+console.log("testing");
+
 var thermostat = new Thermostat();
 $(document).ready(function() {
 
   function textDisplay() {
   $('#temperature').text(thermostat.currentTemperature);
+  $('body, #power-saving-divider').attr('class', thermostat.energyRating());
   };
 
   textDisplay();
 
-  $('.increaseTemp').on('click', function() {
+  $('.increase-temp').on('click', function() {
     thermostat.increaseTemperature(1);
     textDisplay();
   });
 
-  $('.decreaseTemp').on('click', function() {
+  $('.decrease-temp').on('click', function() {
     thermostat.decreaseTemperature(1);
     textDisplay();
   });
 
-  $('.resetButton').on('click', function() {
+  $('.reset-button').on('click', function() {
    thermostat.resetButton();
    textDisplay();
   });
