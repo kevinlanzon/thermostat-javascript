@@ -11,18 +11,20 @@ Requirements
 -  you can decrease the temp with the down button
 -  the minimum temperature is 10 degrees
 -  if power saving mode is on, the maximum temperature is 25 degrees
-- if power saving mode is off, the maximum temperature is 32 degrees
-- power saving mode is on by default
-- you can reset the temperature to 20 by hitting the reset button
+-  if power saving mode is off, the maximum temperature is 32 degrees
+-  power saving mode is on by default
+-  you can reset the temperature to 20 by hitting the reset button
 
 
 Technologies used
 ----
 - JavaScript
 - Jasmine
-- JQuery
-- Html
-- CSS
+- jQuery
+- Html5
+- CSS3
+- Node.js
+- Express.js
 - Git
 - Sublime Text
 
@@ -37,12 +39,20 @@ Screenshot
 How to clone this repo
 ----
 ```sh
-git clone git@github.com:kevinlanzon/thermostat-javascript.git
+$ git clone git@github.com:kevinlanzon/thermostat-javascript.git
+```
+
+How to run
+----
+```sh
+$ cd thermostatJS
+$ npm install
+$ node server.js
 ```
 
 How to run tests
 ----
 ```sh
-cd thermostatJS
-SpecRunner.html
+$ cd thermostat-javascript
+$ SpecRunner.html
 ```
