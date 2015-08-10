@@ -35,6 +35,11 @@ Screenshot
         <img width="80%" src="public/img/Screen Shot 2015-03-12 at 21.49.22.png">
 </div>
 
+Heroku (live)
+-----
+
+[Thermostat](https://thermostat-jquery.herokuapp.com/)
+
 
 How to clone this repo
 ----
