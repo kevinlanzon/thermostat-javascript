@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/kevinlanzon/thermostat-javascript.svg?branch=master)](https://travis-ci.org/kevinlanzon/thermostat-javascript)
-[![Test Coverage](https://codeclimate.com/github/kevinlanzon/thermostat-javascript/badges/coverage.svg)](https://codeclimate.com/github/kevinlanzon/thermostat-javascript/coverage)
+<a href="https://codeclimate.com/github/kevinlanzon/thermostat-javascript"><img src="https://codeclimate.com/github/kevinlanzon/thermostat-javascript/badges/gpa.svg" /></a>
 
 Thermostat in JavaScript
 ==========
