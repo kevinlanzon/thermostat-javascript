@@ -3,7 +3,7 @@
 
 Thermostat in JavaScript
 ==========
-[Makers Academy](http://www.makersacademy.com) Week 5 Challenge
+
 
 Requirements
 ----
